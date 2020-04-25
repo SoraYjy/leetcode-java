@@ -1,7 +1,9 @@
 package other;
 
 /**
- * Created by yujingyi on 2020-04-25.
+ * 11. Container With Most Water
+ * https://leetcode-cn.com/problems/container-with-most-water/
+ * 
  */
 public class ContainerWithMostWater {
     /**
