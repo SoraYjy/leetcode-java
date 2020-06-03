@@ -7,7 +7,7 @@ Record my solutions in leetcode.
 | list | 3 | 2 | 1 | 0 |
 | tree | 6 | 2 | 4 | 0 |
 | string | 2 | 0 | 2 | 0 |
-| array | 8 | 4 | 3 | 1 |
-| other | 2 | 0 | 2 | 0 |
+| array | 10 | 4 | 5 | 1 |
+| other | 4 | 2 | 2 | 0 |
 | number | 2 | 0 | 2 | 0 |
 | concurrency | 1 | 1 | 0 | 0 |
