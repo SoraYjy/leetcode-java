@@ -44,4 +44,37 @@ public class Permutations {
         }
     }
 
+    boolean used[];
+    int size;
+
+    List<Integer> current = new ArrayList<>();
+    List<List<Integer>> result = new ArrayList<>();
+
+    public List<List<Integer>> permute1(int[] nums) {
+        size = nums.length;
+        used = new boolean[size];
+
+        dfs(nums, 0);
+        return result;
+    }
+
+    public void dfs(int[] nums, int depth) {
+        // 最深 存放结果
+        if (depth == size) {
+            result.add(new ArrayList<>(current));
+            return;
+        }
+
+        for (int i = 0; i < size; ++i) {
+            // 如果未使用过
+            if (!used[i]) {
+                used[i] = true;
+                current.add(nums[i]);
+                dfs(nums, ++depth);
+                current.remove(current.size() - 1);
+                used[i] = false;
+            }
+        }
+    }
+
 }

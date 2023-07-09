@@ -63,4 +63,34 @@ public class LowestCommonAncestorOfABinaryTree {
         if(right == null) return left;
         return root;
     }
+
+    public TreeNode lowestCommonAncestor1(TreeNode root, TreeNode p, TreeNode q) {
+        return traverse(root, p, q);
+    }
+
+    public TreeNode traverse(TreeNode node, TreeNode p, TreeNode q) {
+        if (p == node || q == node) {
+            return node;
+        }
+        if (node == null) {
+            return null;
+        }
+
+        TreeNode left = traverse(node.left, p, q);
+        TreeNode right = traverse(node.right, p, q);
+
+        if (left == null && right == null) {
+            return null;
+        }
+
+        if (left == null) {
+            return right;
+        }
+
+        if (right == null) {
+            return left;
+        }
+
+        return node;
+    }
 }

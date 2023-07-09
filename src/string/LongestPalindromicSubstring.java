@@ -17,6 +17,7 @@ public class LongestPalindromicSubstring {
         }
 
         int length = s.length();
+        // 从 i 到 j 构成的子串是否为回文串
         boolean[][] dp = new boolean[length][length];
         int left = 0, right = 0;
         for (int i = length - 2; i >= 0; --i) {

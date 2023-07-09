@@ -3,6 +3,8 @@ package list;
 import list.model.ListNode;
 
 /**
+ * 876. Middle of the Linked List
+ * https://leetcode.cn/problems/middle-of-the-linked-list
  * @author yujingyi
  * @date 2023/6/2
  */

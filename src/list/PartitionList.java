@@ -3,8 +3,8 @@ package list;
 import list.model.ListNode;
 
 /**
- * @author yujingyi
- * @date 2023/6/1
+ * 86. Partition List
+ * https://leetcode.cn/problems/partition-list/
  */
 public class PartitionList {
   public ListNode partition(ListNode head, int x) {
