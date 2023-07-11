@@ -12,6 +12,7 @@ public class CoinChange {
      * @return
      */
     public int coinChange(int[] coins, int amount) {
+        // 组成 i 块钱最小硬币的数量
         int[] dp = new int[amount + 1];
         int size = coins.length;
         dp[0] = 0;
